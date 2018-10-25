@@ -78,7 +78,14 @@ class AlexaTopSites:
         url = "https://%s%s?%s" % (AWS_HOST, AWS_URI, self.gen_query_string(start, count, country_code))
 
         r = requests.get(url, headers=headers)
+
+        # print url
+	print(r)
+
+        # print content
         content = r.text
+        print(content)
+
         ranking = self.parse(content)
         self.out(ranking)
 
