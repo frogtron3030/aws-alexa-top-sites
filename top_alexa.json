@@ -1,1 +1,182 @@
-{}
+{
+    "1": {
+        "domain": "google.com", 
+        "global_rank": "1", 
+        "reach": "848200", 
+        "page_views_per_million": "232780", 
+        "country_rank": "1", 
+        "county_code": "US", 
+        "page_views_per_user": "13.08"
+    }, 
+    "2": {
+        "domain": "youtube.com", 
+        "global_rank": "2", 
+        "reach": "452300", 
+        "page_views_per_million": "42481", 
+        "country_rank": "2", 
+        "county_code": "US", 
+        "page_views_per_user": "4.48"
+    }, 
+    "3": {
+        "domain": "facebook.com", 
+        "global_rank": "3", 
+        "reach": "290100", 
+        "page_views_per_million": "20300", 
+        "country_rank": "3", 
+        "county_code": "US", 
+        "page_views_per_user": "3.33"
+    }, 
+    "4": {
+        "domain": "amazon.com", 
+        "global_rank": "10", 
+        "reach": "175400", 
+        "page_views_per_million": "32360", 
+        "country_rank": "4", 
+        "county_code": "US", 
+        "page_views_per_user": "8.79"
+    }, 
+    "5": {
+        "domain": "reddit.com", 
+        "global_rank": "17", 
+        "reach": "115000", 
+        "page_views_per_million": "18510", 
+        "country_rank": "5", 
+        "county_code": "US", 
+        "page_views_per_user": "7.67"
+    }, 
+    "6": {
+        "domain": "yahoo.com", 
+        "global_rank": "7", 
+        "reach": "122800", 
+        "page_views_per_million": "9267", 
+        "country_rank": "6", 
+        "county_code": "US", 
+        "page_views_per_user": "3.6"
+    }, 
+    "7": {
+        "domain": "wikipedia.org", 
+        "global_rank": "5", 
+        "reach": "127000", 
+        "page_views_per_million": "8254", 
+        "country_rank": "7", 
+        "county_code": "US", 
+        "page_views_per_user": "3.1"
+    }, 
+    "8": {
+        "domain": "twitter.com", 
+        "global_rank": "12", 
+        "reach": "123800", 
+        "page_views_per_million": "6873", 
+        "country_rank": "8", 
+        "county_code": "US", 
+        "page_views_per_user": "2.64"
+    }, 
+    "9": {
+        "domain": "instagram.com", 
+        "global_rank": "13", 
+        "reach": "62460", 
+        "page_views_per_million": "4876", 
+        "country_rank": "9", 
+        "county_code": "US", 
+        "page_views_per_user": "3.72"
+    }, 
+    "10": {
+        "domain": "linkedin.com", 
+        "global_rank": "28", 
+        "reach": "55670", 
+        "page_views_per_million": "6154", 
+        "country_rank": "10", 
+        "county_code": "US", 
+        "page_views_per_user": "5.27"
+    }, 
+    "11": {
+        "domain": "ebay.com", 
+        "global_rank": "43", 
+        "reach": "46440", 
+        "page_views_per_million": "7250", 
+        "country_rank": "11", 
+        "county_code": "US", 
+        "page_views_per_user": "7.44"
+    }, 
+    "12": {
+        "domain": "netflix.com", 
+        "global_rank": "27", 
+        "reach": "66960", 
+        "page_views_per_million": "2289", 
+        "country_rank": "12", 
+        "county_code": "US", 
+        "page_views_per_user": "1.63"
+    }, 
+    "13": {
+        "domain": "espn.com", 
+        "global_rank": "73", 
+        "reach": "46690", 
+        "page_views_per_million": "4789", 
+        "country_rank": "13", 
+        "county_code": "US", 
+        "page_views_per_user": "4.89"
+    }, 
+    "14": {
+        "domain": "twitch.tv", 
+        "global_rank": "33", 
+        "reach": "49160", 
+        "page_views_per_million": "2746", 
+        "country_rank": "14", 
+        "county_code": "US", 
+        "page_views_per_user": "2.66"
+    }, 
+    "15": {
+        "domain": "microsoftonline.com", 
+        "global_rank": "44", 
+        "reach": "52060", 
+        "page_views_per_million": "2036", 
+        "country_rank": "15", 
+        "county_code": "US", 
+        "page_views_per_user": "1.86"
+    }, 
+    "16": {
+        "domain": "office.com", 
+        "global_rank": "39", 
+        "reach": "46420", 
+        "page_views_per_million": "2180", 
+        "country_rank": "16", 
+        "county_code": "US", 
+        "page_views_per_user": "2.24"
+    }, 
+    "17": {
+        "domain": "pornhub.com", 
+        "global_rank": "29", 
+        "reach": "38330", 
+        "page_views_per_million": "2807", 
+        "country_rank": "17", 
+        "county_code": "US", 
+        "page_views_per_user": "3.49"
+    }, 
+    "18": {
+        "domain": "live.com", 
+        "global_rank": "15", 
+        "reach": "34310", 
+        "page_views_per_million": "2536", 
+        "country_rank": "18", 
+        "county_code": "US", 
+        "page_views_per_user": "3.52"
+    }, 
+    "19": {
+        "domain": "imgur.com", 
+        "global_rank": "67", 
+        "reach": "37340", 
+        "page_views_per_million": "2050", 
+        "country_rank": "19", 
+        "county_code": "US", 
+        "page_views_per_user": "2.62"
+    }, 
+    "20": {
+        "domain": "craigslist.org", 
+        "global_rank": "125", 
+        "reach": "24560", 
+        "page_views_per_million": "4451", 
+        "country_rank": "20", 
+        "county_code": "US", 
+        "page_views_per_user": "8.63"
+    }
+}

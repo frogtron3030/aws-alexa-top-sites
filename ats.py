@@ -80,13 +80,13 @@ class AlexaTopSites:
         r = requests.get(url, headers=headers)
 
         # print url
-	print(r)
+        print(r)
 
         # print content
         content = r.text
         print(content)
 
-        ranking = self.parse(content)
+        ranking = self.parse(content, country_code)
         self.out(ranking)
 
     @staticmethod
@@ -143,7 +143,7 @@ class AlexaTopSites:
         return key
 
     @staticmethod
-    def parse(content):
+    def parse(content, country_code):
         """
         Convert the response of AWS to a dictionary.
         """
@@ -152,10 +152,27 @@ class AlexaTopSites:
         namespace_map = {'aws': 'http://ats.amazonaws.com/doc/2005-07-11'}
         entries = xml.xpath('//aws:Site', namespaces=namespace_map)
         for entry in entries:
-            domain = entry.xpath('aws:DataUrl', namespaces=namespace_map)[0].text
             country = entry.xpath('aws:Country', namespaces=namespace_map)
+
             rank = country[0].xpath('aws:Rank', namespaces=namespace_map)[0].text
-            ranking[int(rank)] = domain
+            
+            reach = country[0].xpath('aws:Reach', namespaces=namespace_map)
+
+            worldwide = entry.xpath('aws:Global', namespaces=namespace_map)
+            page_views = country[0].xpath('aws:PageViews', namespaces=namespace_map)
+            
+            
+            website = {}
+            ranking[int(rank)] = website
+            website['domain'] = entry.xpath('aws:DataUrl', namespaces=namespace_map)[0].text
+            website['county_code'] = country_code
+            website['country_rank'] = country[0].xpath('aws:Rank', namespaces=namespace_map)[0].text
+            website['reach'] = reach[0].xpath('aws:PerMillion', namespaces=namespace_map)[0].text
+            website['global_rank'] = worldwide[0].xpath('aws:Rank', namespaces=namespace_map)[0].text
+            website['country_rank'] = country[0].xpath('aws:Rank', namespaces=namespace_map)[0].text
+            website['page_views_per_million'] = page_views[0].xpath('aws:PerMillion', namespaces=namespace_map)[0].text
+            website['page_views_per_user'] = page_views[0].xpath('aws:PerUser', namespaces=namespace_map)[0].text
+            
         return ranking
 
     def out(self, ranking):
@@ -164,9 +181,9 @@ class AlexaTopSites:
         """
         self.ranking.update(ranking)
         for r in ranking:
-            print("%d %s" % (r, ranking[r]))
+            print(ranking[r])
         with open('top_alexa.json', 'w') as outfile:
-            json.dump(self.ranking, outfile)
+            json.dump(self.ranking, outfile, indent=4)
 
 
 def main():
